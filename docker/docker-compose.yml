@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  postgresql:
+    image: 'bitnami/postgresql:latest'
+    networks:
+      - app-tier
+    env_file:
+      - postgres.env
+    ports:
+      - 5432:5432
+  api:
+    image: 'io.home/expenses-tracker-api:1.0'
+    networks:
+      - app-tier
+    environment:
+      - PGSQL_HOST=postgresql
+      - PGSQL_PORT=5432
+      - PGSQL_USER=expenses
+      - PGSQL_PWD=9AG7FghH
+      - APP_UPLOAD_PATH=/tmp
+    ports:
+      - 8080:8080
+    depends_on:
+      - postgresql
+networks:
+  app-tier:
+    driver: bridge

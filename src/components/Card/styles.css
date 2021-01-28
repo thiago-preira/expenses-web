@@ -1,0 +1,15 @@
+.card {
+  width: 100%;
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.card_content {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}

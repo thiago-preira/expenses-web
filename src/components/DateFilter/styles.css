@@ -1,0 +1,17 @@
+.date-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  margin: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+table {
+  margin: 10px;
+}
+.date-filter select {
+  margin: 10px;
+  width: 100px;
+}

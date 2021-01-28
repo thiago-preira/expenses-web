@@ -1,0 +1,7 @@
+.category-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.category-item {
+  margin: 10px;
+}
