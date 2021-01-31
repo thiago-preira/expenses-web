@@ -86,7 +86,6 @@ function Categories() {
                   <tr key={category.id}>
                     <td>{category.name}</td>
                     <td>{category.group.name}</td>
-                    <td>Action</td>
                   </tr>
                 ))}
               </tbody>

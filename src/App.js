@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Categories from "./pages/Categories";
+import Upload from "./pages/Upload";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/categories" component={Categories} />
+          <Route path="/upload" component={Upload} />
         </Switch>
       </Router>
     </>

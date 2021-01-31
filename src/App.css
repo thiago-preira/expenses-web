@@ -38,7 +38,6 @@ input[type="button"].button-primary {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
 }
-
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -52,6 +51,18 @@ input[type="button"].button-primary:focus {
   filter: opacity(85%);
   background-color: var(--primary-color);
   border-color: var(--primary-color);
+}
+input[type="file"] {
+  display: none;
+}
+.file-upload{
+  border: 1px solid #ccc;
+  display: inline-block;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 3px;
 }
 
 .credit {
